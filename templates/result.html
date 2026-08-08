@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Disaster Simulation Result</h1>
+    <h2>{{ scenario.disaster }}</h2>
+    <p><strong>Impact:</strong> {{ scenario.impact }}</p>
+    <h3>Recovery Steps:</h3>
+    <ul>
+        {% for step in scenario.recovery_steps %}
+            <li>{{ step }}</li>
+        {% endfor %}
+    </ul>
+    <p><strong>Status:</strong> {{ status }}</p>
+</body>
+</html>
 
