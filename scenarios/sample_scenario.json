@@ -1,10 +1,12 @@
 {
-  "disaster": "Server Crash",
-  "impact": "Web application unavailable",
-  "recovery_steps": [
-    "Switch to backup server",
-    "Restore database from snapshot",
-    "Verify application functionality"
-  ]
+  "scenario": {
+    "disaster": "Server Crash",
+    "impact": "Web application unavailable",
+    "recovery_steps": [
+      "Switch to backup server",
+      "Restore database from snapshot",
+      "Verify application functionality"
+    ]
+  },
+  "status": "Disaster simulated"
 }
-
